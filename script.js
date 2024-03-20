@@ -11,6 +11,9 @@ const burgerButton = document.querySelector(".burger-icon");
 const burgerMenu = document.querySelector(".burger-menu");
 const closeBurgerButton = document.querySelector(".close-burger-menu-button");
 const emailButton = document.querySelector(".email");
+const projectImages = document.querySelectorAll(".project-card-img");
+
+projectImages.forEach((image) => image.classList.add("hidden-img"));
 
 const d = new Date();
 let year = d.getFullYear();
@@ -60,6 +63,15 @@ function revealLogos(entries, observer) {
   observer.unobserve(skillsGrid);
 }
 
+function revealImages(entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("hidden-img");
+  observer.unobserve(entry.target);
+}
+
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
   threshold: 0.1,
@@ -70,8 +82,17 @@ const logoObserver = new IntersectionObserver(revealLogos, {
   threshold: 0.3,
 });
 
+const projectImgObserver = new IntersectionObserver(revealImages, {
+  root: null,
+  threshold: 0.2,
+});
+
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
+});
+
+projectImages.forEach(function (image) {
+  projectImgObserver.observe(image);
 });
 
 logoObserver.observe(skillsGrid);

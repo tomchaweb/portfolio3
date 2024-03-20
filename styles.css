@@ -262,7 +262,14 @@ section {
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 1;
+    scale: 1;
     transition: all 0.4s;
+}
+
+.hidden-img {
+    opacity: 0;
+    scale: 0.2;
 }
 
 .project-card-img:hover {
@@ -486,5 +493,16 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .hero h1{
+        font-size: 6em;
+    }
+
+    .hero h2{
+        font-size: 3em;
+        top: -5.75rem;
     }
 }
