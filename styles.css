@@ -497,6 +497,14 @@ footer {
 }
 
 @media (max-width: 500px){
+    header {
+        margin: 1rem;
+    }
+
+    .hero {
+        height: 15rem;
+    }
+
     .hero h1{
         font-size: 6em;
     }
@@ -504,5 +512,25 @@ footer {
     .hero h2{
         font-size: 3em;
         top: -5.75rem;
+    }
+
+    .about {
+        margin-bottom: 2rem;
+    }
+
+    .skill-icons {
+        gap: 0.5rem;
+    }
+
+    .skill-logo {
+        scale: 0.5;
+    }
+
+    .social-links li{
+        font-size: 1.5em;
+    }
+
+    .burger-menu .nav-link {
+        font-size: 4em;
     }
 }
