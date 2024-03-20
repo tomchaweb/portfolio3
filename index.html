@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Chapman</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <header>
+        <h2>TomCha.</h2>
+            <nav>
+                <a class="nav-link" href="#" data-destination="about">About</a>
+                <a class="nav-link" href="#" data-destination="projects">Projects</a>
+                <a class="nav-link" href="#" data-destination="contact">Contact</a>
+            </nav>
+            <button class="dark-light-mode-btn">
+                <svg class="light-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+                <svg class="dark-icon hidden-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                </svg>
+            </button>
+        <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        <div class="burger-menu hidden-burger-menu">
+            <a class="nav-link" href="#" data-destination="about">About</a>
+            <a class="nav-link" href="#" data-destination="projects">Projects</a>
+            <a class="nav-link" href="#" data-destination="contact">Contact</a>
+            <svg class="close-burger-menu-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+        </div>
+    </header>
+    <section class="hero hidden-section">
+        <h1 class="slide-left-anim">Tom <br>Chapman<span>.</span></h1>
+        <h2 class="slide-right-anim">Web Dev</h2>
+    </section>
+    <section class="about hidden-section">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Who I am</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fuga atque perferendis aliquam soluta veniam earum velit repudiandae, quaerat suscipit laudantium adipisci deleniti ex exercitationem harum. Neque nesciunt iste distinctio.</p>
+            </div>
+            <div class="skills-grid">
+                <ul class="skill-icons">
+                    <li class="skill-logo hidden-logo">
+                        <svg width="80px" height="80px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M5.08057 0H6.1623V1.06875H7.15183V0H8.23361V3.23644H7.15188V2.15269H6.16235V3.23644H5.08061L5.08057 0Z" fill="currentColor"/>
+                        <path d="M9.65622 1.07325H8.7039V0H11.6908V1.07325H10.738V3.23644H9.65626L9.65622 1.07325Z" fill="currentColor"/>
+                        <path d="M12.1648 0H13.2928L13.9866 1.13719L14.6797 0H15.8081V3.23644H14.7308V1.63228L13.9866 2.78302H13.968L13.2232 1.63228V3.23644H12.1648V0Z" fill="currentColor"/>
+                        <path d="M16.3465 0H17.4286V2.16666H18.9498V3.23644H16.3465V0Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.04593 22.0724L3 4.71658H21L18.9527 22.0697L11.9897 24L5.04593 22.0724ZM9.18344 12.5727L8.98891 10.3929H17.1343L17.3249 8.26428H6.6626L7.23672 14.7013L14.6138 14.7013L14.3668 17.4619L11.9927 18.1027L11.991 18.1034L9.62038 17.4633L9.46883 15.7656H7.33203L7.63025 19.1079L11.9906 20.3183L16.3565 19.1078L16.8887 13.1443L16.9406 12.5727L9.18344 12.5727Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </li>
+                    <li class="skill-logo hidden-logo">
+                        <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.50159 0H10.0797V1.07812H8.57971V2.15625H10.0797V3.23438H7.50159V0Z" fill="currentColor"/>
+                        <path d="M10.5953 0H13.1735V0.9375H11.6735V1.125H13.1735V3.28125H10.5953V2.29688H12.0953V2.10938H10.5953V0Z" fill="currentColor"/>
+                        <path d="M13.6891 0H16.2672V0.9375H14.7672V1.125H16.2672V3.28125H13.6891V2.29688H15.1891V2.10938H13.6891V0Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9912 24L5.04739 22.0723L3 4.71655H21L18.9541 22.0696L11.9912 24ZM7.04736 12.5727L7.23814 14.7013L14.6153 14.7013L14.3682 17.4619L11.9941 18.1027L11.992 18.1034L9.62135 17.4633L9.4698 15.7656H7.33301L7.63123 19.1079L11.9915 20.3183L16.3579 19.1078L16.8901 13.1443L16.9421 12.5727L17.3264 8.26428H6.66406L6.85756 10.3929H14.9936L14.7999 12.5727L7.04736 12.5727Z" fill="currentColor"/>
+                        </svg>
+                    </li>
+                    <li class="skill-logo hidden-logo">
+                        <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V24H0V0ZM18.3467 20.1196C17.2343 20.1196 16.6053 19.5394 16.1219 18.7501L14.2891 19.8149C14.9512 21.123 16.3044 22.1211 18.3989 22.1211C20.5409 22.1211 22.136 21.0088 22.136 18.9783C22.136 17.0949 21.0541 16.2571 19.1379 15.4354L18.5741 15.1939C17.6065 14.7749 17.1874 14.501 17.1874 13.8244C17.1874 13.277 17.6061 12.8579 18.2667 12.8579C18.9143 12.8579 19.3314 13.131 19.7181 13.8244L21.4743 12.6968C20.7314 11.3901 19.7006 10.891 18.2667 10.891C16.2526 10.891 14.9638 12.1787 14.9638 13.8701C14.9638 15.7063 16.0449 16.5749 17.6724 17.2682L18.2362 17.5101C19.2648 17.96 19.8781 18.2339 19.8781 19.0072C19.8781 19.6526 19.2811 20.1196 18.3467 20.1196ZM9.60647 20.1055C8.83161 20.1055 8.50933 19.5741 8.15504 18.9455L6.31923 20.057C6.85104 21.1825 7.89676 22.117 9.70247 22.117C11.7009 22.117 13.0701 21.0541 13.0701 18.7189V11.0198H10.8149V18.6884C10.8149 19.8156 10.3474 20.1055 9.60647 20.1055Z" fill="currentColor"/>
+                        </svg>
+                    </li>
+                    <li class="skill-logo hidden-logo">
+                        <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                        <path d="M24 11.689C24 10.0991 22.009 8.59234 18.9564 7.65797C19.6608 4.54668 19.3477 2.07134 17.9682 1.27884C17.6502 1.09295 17.2784 1.00489 16.8724 1.00489V2.0958C17.0974 2.0958 17.2784 2.13983 17.4301 2.22299C18.0954 2.60457 18.384 4.05748 18.159 5.92621C18.1052 6.38606 18.0171 6.87036 17.9095 7.36445C16.9507 7.12964 15.9038 6.94863 14.8031 6.83123C14.1427 5.92621 13.4578 5.10436 12.768 4.38524C14.3628 2.90298 15.8598 2.09091 16.8773 2.09091V1C15.532 1 13.7709 1.95883 11.9902 3.6221C10.2095 1.96861 8.44843 1.01957 7.10314 1.01957V2.11048C8.11578 2.11048 9.61761 2.91765 11.2124 4.39013C10.5275 5.10925 9.84264 5.92621 9.19201 6.83123C8.08643 6.94863 7.03954 7.12964 6.08072 7.36934C5.9682 6.88015 5.88504 6.40563 5.82633 5.95067C5.59641 4.08194 5.88015 2.62903 6.54056 2.24256C6.68732 2.1545 6.87811 2.11537 7.10314 2.11537V1.02446C6.69221 1.02446 6.32042 1.11252 5.99755 1.29841C4.62291 2.09091 4.31472 4.56135 5.02405 7.66286C1.98125 8.60212 0 10.104 0 11.689C0 13.2788 1.99103 14.7856 5.04362 15.7199C4.33918 18.8312 4.65226 21.3066 6.0318 22.0991C6.34978 22.285 6.72157 22.373 7.13249 22.373C8.47778 22.373 10.2389 21.4142 12.0196 19.7509C13.8002 21.4044 15.5614 22.3534 16.9066 22.3534C17.3176 22.3534 17.6894 22.2654 18.0122 22.0795C19.3869 21.287 19.6951 18.8166 18.9857 15.715C22.0188 14.7807 24 13.274 24 11.689ZM17.6307 8.42601C17.4497 9.05707 17.2246 9.7077 16.9702 10.3583C16.7697 9.96698 16.5593 9.57562 16.3294 9.18427C16.1044 8.79291 15.8647 8.41133 15.625 8.03954C16.3196 8.14227 16.9898 8.26947 17.6307 8.42601ZM15.3901 13.636C15.0086 14.2964 14.6172 14.9225 14.2112 15.5047C13.4823 15.5683 12.7436 15.6025 12 15.6025C11.2613 15.6025 10.5226 15.5683 9.79861 15.5096C9.39258 14.9274 8.99633 14.3062 8.61476 13.6506C8.24297 13.0098 7.90542 12.3592 7.59723 11.7036C7.90053 11.0481 8.24297 10.3926 8.60987 9.75173C8.99144 9.09132 9.3828 8.46515 9.78883 7.883C10.5177 7.81941 11.2564 7.78516 12 7.78516C12.7387 7.78516 13.4774 7.81941 14.2014 7.87811C14.6074 8.46025 15.0037 9.08153 15.3852 9.73706C15.757 10.3779 16.0946 11.0285 16.4028 11.6841C16.0946 12.3396 15.757 12.9951 15.3901 13.636ZM16.9702 13C17.2344 13.6555 17.4594 14.311 17.6453 14.947C17.0045 15.1035 16.3294 15.2356 15.6298 15.3384C15.8695 14.9617 16.1093 14.5752 16.3343 14.179C16.5593 13.7876 16.7697 13.3914 16.9702 13ZM12.0098 18.2197C11.5548 17.7501 11.0999 17.2267 10.6498 16.6543C11.0901 16.6739 11.5402 16.6885 11.9951 16.6885C12.455 16.6885 12.9099 16.6788 13.3551 16.6543C12.9148 17.2267 12.4598 17.7501 12.0098 18.2197ZM8.37016 15.3384C7.6755 15.2356 7.0053 15.1084 6.36445 14.9519C6.54545 14.3208 6.77048 13.6702 7.02487 13.0196C7.22544 13.4109 7.43579 13.8023 7.66572 14.1936C7.89564 14.585 8.13045 14.9666 8.37016 15.3384ZM11.9853 5.15817C12.4403 5.6278 12.8952 6.15124 13.3453 6.7236C12.905 6.70404 12.455 6.68936 12 6.68936C11.5402 6.68936 11.0852 6.69914 10.64 6.7236C11.0803 6.15124 11.5353 5.6278 11.9853 5.15817ZM8.36527 8.03954C8.12556 8.41622 7.88585 8.80269 7.66082 9.19894C7.43579 9.5903 7.22544 9.98166 7.02487 10.373C6.7607 9.71749 6.53567 9.06197 6.34978 8.42601C6.99062 8.27436 7.66572 8.14227 8.36527 8.03954ZM3.93804 14.1643C2.20628 13.4256 1.08602 12.457 1.08602 11.689C1.08602 10.9209 2.20628 9.94741 3.93804 9.21362C4.35875 9.03261 4.81859 8.87118 5.29311 8.71953C5.57195 9.67835 5.93885 10.6763 6.3938 11.6987C5.94374 12.7163 5.58174 13.7093 5.30779 14.6633C4.82348 14.5116 4.36364 14.3453 3.93804 14.1643ZM6.56991 21.1549C5.90461 20.7733 5.61598 19.3204 5.84101 17.4517C5.89482 16.9918 5.98288 16.5075 6.0905 16.0135C7.04933 16.2483 8.09621 16.4293 9.1969 16.5467C9.85732 17.4517 10.5422 18.2735 11.232 18.9927C9.63718 20.4749 8.14024 21.287 7.12271 21.287C6.90257 21.2821 6.71667 21.2381 6.56991 21.1549ZM18.1737 17.4272C18.4036 19.296 18.1199 20.7489 17.4594 21.1353C17.3127 21.2234 17.1219 21.2625 16.8969 21.2625C15.8842 21.2625 14.3824 20.4554 12.7876 18.9829C13.4725 18.2638 14.1574 17.4468 14.808 16.5418C15.9136 16.4244 16.9605 16.2434 17.9193 16.0037C18.0318 16.4978 18.1199 16.9723 18.1737 17.4272ZM20.0571 14.1643C19.6364 14.3453 19.1765 14.5067 18.702 14.6584C18.4232 13.6996 18.0563 12.7016 17.6013 11.6792C18.0514 10.6616 18.4134 9.66857 18.6873 8.71464C19.1716 8.86629 19.6315 9.03261 20.062 9.21362C21.7937 9.9523 22.914 10.9209 22.914 11.689C22.9091 12.457 21.7888 13.4305 20.0571 14.1643Z" fill="currentColor"/>
+                        <path d="M11.9951 13.9246C13.2298 13.9246 14.2307 12.9237 14.2307 11.689C14.2307 10.4542 13.2298 9.45332 11.9951 9.45332C10.7604 9.45332 9.75948 10.4542 9.75948 11.689C9.75948 12.9237 10.7604 13.9246 11.9951 13.9246Z" fill="currentColor"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="projects hidden-section">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>My Projects</h2>
+        </div>
+        <div class="project-card">
+            <div class="project-card-text">
+                <h2>litterboxd</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum temporibus perspiciatis. Doloremque sapiente fuga accusantium dolorem delectus quia neque reiciendis eius a, eveniet quam blanditiis repellat possimus rerum praesentium.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <button>Live Demo</button>
+            </div>
+            <div class="project-card-img-box">
+                <img class="project-card-img" src="./assets/litterboxd-trans.png">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-text">
+                <h2>Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit sed perferendis aspernatur incidunt facere odit labore aut consequatur, enim suscipit nostrum provident et hic magnam dolorem alias necessitatibus deleniti.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <button>Live Demo</button>
+            </div>
+            <div class="project-card-img-box">
+                <img class="project-card-img" src="./assets/litterboxd-trans.png">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-text">
+                <h2>Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit sed perferendis aspernatur incidunt facere odit labore aut consequatur, enim suscipit nostrum provident et hic magnam dolorem alias necessitatibus deleniti.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <button>Live Demo</button>
+            </div>
+            <div class="project-card-img-box">
+                <img class="project-card-img" src="./assets/litterboxd-trans.png">
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-text">
+                <h2>Project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sit sed perferendis aspernatur incidunt facere odit labore aut consequatur, enim suscipit nostrum provident et hic magnam dolorem alias necessitatibus deleniti.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+                <button>Live Demo</button>
+            </div>
+            <div class="project-card-img-box">
+                <img class="project-card-img" src="./assets/litterboxd-trans.png">
+            </div>
+        </div>
+    </section>
+    <section class="contact hidden-section">
+        <div class="section-header">
+            <div class="dot"></div>
+            <h2>Contact Me</h2>
+        </div>
+        <ul class="social-links">
+            <li class="social-link email"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+              </svg>tomcha.web@gmail.com</li>
+            <li class="social-link"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg><a href="https://www.github.com">Github</a></li>
+            <li class="social-link"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg><a href="https://www.instagram.com">Instagram</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright Tom Chapman</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
