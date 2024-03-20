@@ -9,6 +9,7 @@ body {
     padding: 1rem;
     font-family: "Poppins", sans-serif;
     transition: all 0.1s;
+    overflow-x: hidden;
 }
 
 .dark {
