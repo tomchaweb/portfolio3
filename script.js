@@ -120,6 +120,7 @@ nav.addEventListener("click", function (e) {
 // handling mobile burger button
 burgerButton.addEventListener("click", function () {
   burgerMenu.classList.remove("hidden-burger-menu");
+  document.querySelector("body").classList.add("no-scroll");
 });
 
 burgerMenu.addEventListener("click", function (e) {
@@ -131,11 +132,13 @@ burgerMenu.addEventListener("click", function (e) {
       behavior: "smooth",
     });
     burgerMenu.classList.add("hidden-burger-menu");
+    document.querySelector("body").classList.remove("no-scroll");
   }
 });
 
 closeBurgerButton.addEventListener("click", function () {
   burgerMenu.classList.add("hidden-burger-menu");
+  body.classList.remove("no-scroll");
 });
 
 // mail button

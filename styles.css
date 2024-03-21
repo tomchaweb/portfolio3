@@ -394,6 +394,10 @@ footer {
     pointer-events: none;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 .slide-left-anim {
     animation: slide-left 1s ease;
 }
