@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100%;
     font-size: 10px;
     padding: 1rem;
     font-family: "Poppins", sans-serif;
@@ -346,6 +347,7 @@ footer {
 
 .burger-menu {
     position: fixed;
+    overflow-x: hidden;
     padding: 3rem;
     top: 0;
     left: 0;
@@ -498,6 +500,10 @@ footer {
 }
 
 @media (max-width: 500px){
+    body, html {
+        overflow-x: hidden;
+    }
+
     header {
         margin: 1rem;
     }
