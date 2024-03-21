@@ -501,7 +501,9 @@ footer {
 
 @media (max-width: 500px){
     body, html {
+        position: relative;
         overflow-x: hidden;
+        height: 100%;
     }
 
     header {
