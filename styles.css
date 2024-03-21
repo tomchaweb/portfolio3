@@ -502,6 +502,7 @@ footer {
 @media (max-width: 500px){
     body, html {
         overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     header {
