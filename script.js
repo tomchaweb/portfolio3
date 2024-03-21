@@ -39,7 +39,10 @@ function revealSection(entries, observer) {
 
   if (!entry.isIntersecting) return;
 
-  entry.target.classList.remove("hidden-section");
+  if (entry.target.classList.contains("hidden-section")) {
+    entry.target.classList.remove("hidden-section");
+  }
+
   observer.unobserve(entry.target);
 }
 

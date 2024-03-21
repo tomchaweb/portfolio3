@@ -346,7 +346,7 @@ footer {
 }
 
 .burger-menu {
-    position: fixed;
+    position: absolute;
     overflow-x: hidden;
     padding: 3rem;
     top: 0;
@@ -502,7 +502,6 @@ footer {
 @media (max-width: 500px){
     body, html {
         overflow-x: hidden;
-        overflow-y: scroll;
     }
 
     header {
