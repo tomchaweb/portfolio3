@@ -367,7 +367,7 @@ footer {
 }
 
 .burger-menu {
-    position: absolute;
+    position: fixed;
     overflow-x: hidden;
     padding: 3rem;
     top: 0;
@@ -416,7 +416,7 @@ footer {
 }
 
 .no-scroll {
-    overflow-y: hidden;
+    overflow-y: clip;
 }
 
 .slide-left-anim {
@@ -534,7 +534,7 @@ footer {
 @media (max-width: 500px){
     body, html {
         position: relative;
-        overflow-x: none;
+        overflow-x: clip;
     }
 
     header {
@@ -574,3 +574,28 @@ footer {
         font-size: 4em;
     }
 }
+
+@media (prefers-reduced-motion) {
+    .hidden-logo {
+        opacity: 1;
+        transform: none;
+    }
+
+    .project-card-img:hover {
+        scale: 1;
+        transform: none;
+    }
+
+    .hidden-img {
+        opacity: 1;
+        scale: 1;
+    }
+
+    .slide-left-anim {
+        animation: none;
+    }
+    
+    .slide-right-anim {
+        animation: none;
+    }
+  }
