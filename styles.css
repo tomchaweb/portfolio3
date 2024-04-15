@@ -260,7 +260,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: all 0.4s;
-    box-shadow: 0px 2px 5px #ee6941;
+    /* box-shadow: 0px 2px 5px #ee6941; */
 }
 
 .project-card button:hover{
@@ -268,7 +268,7 @@ section {
     background-color: #1b1c1e;
     /* box-shadow: none; */
     color: #ee6941;
-    box-shadow: 0px 2px 5px #111215;
+    /* box-shadow: 0px 2px 5px #111215; */
 }
 
 
