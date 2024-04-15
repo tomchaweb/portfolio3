@@ -13,6 +13,10 @@ const closeBurgerButton = document.querySelector(".close-burger-menu-button");
 const emailButton = document.querySelector(".email");
 const projectImages = document.querySelectorAll(".project-card-img");
 
+// localStorage.setItem("hi", "hello");
+// const message = localStorage.getItem("hi");
+// console.log(message);
+
 projectImages.forEach((image) => image.classList.add("hidden-img"));
 
 const d = new Date();

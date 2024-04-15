@@ -19,7 +19,7 @@ body {
 }
 
 .light {
-    background-color: #fcf5e5;
+    background-color: #ffffff;
     color: #1b1c1e;
 }
 
@@ -35,6 +35,8 @@ body {
     /* color: inherit; */
     color: #F98866;
     transition: all 0.2s;
+    /* -webkit-animation: rotate 9s linear infinite;
+    animation: rotate 9s linear infinite; */
 }
 
 .dark-light-mode-btn:hover {
@@ -83,6 +85,13 @@ nav a:hover{
     color: #a7a7a7
 }
 
+.nav-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #F98866;
+}
+
 .hero {
     padding-top: 5%;
     margin-bottom: 5%;
@@ -97,6 +106,7 @@ nav a:hover{
     /* font-family: "Anton";
     letter-spacing: -0.0em;
     line-height: 0.8em; */
+    /* color: #1b1c1e; */
 
     font-size: 24em;
     letter-spacing: -0.05em;
@@ -170,7 +180,7 @@ section {
 
 .about-text h2 {
     font-size: 4em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .about-text p {
@@ -217,7 +227,7 @@ section {
 
 .project-card-text h2 {
     font-size: 4em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .project-card-text p {
@@ -249,12 +259,16 @@ section {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    transition: all 0.1s;
+    transition: all 0.4s;
+    box-shadow: 0px 2px 5px #ee6941;
 }
 
 .project-card button:hover{
     cursor: pointer;
-    background-color: #a55b44;
+    background-color: #1b1c1e;
+    /* box-shadow: none; */
+    color: #ee6941;
+    box-shadow: 0px 2px 5px #111215;
 }
 
 
@@ -266,6 +280,7 @@ section {
     background-size: cover;
     opacity: 1;
     scale: 1;
+    transform: rotate(10deg);
     transition: all 0.4s;
 }
 
@@ -276,6 +291,7 @@ section {
 
 .project-card-img:hover {
     scale: 1.5;
+    transform: rotate(0);
 }
 
 .project-card:nth-child(odd) .project-card-img{
@@ -288,6 +304,11 @@ section {
 
 .project-card:nth-child(even) .project-card-img{
     background-image: url("./assets/blob2.svg");
+    transform: rotate(-10deg);
+}
+
+.project-card:nth-child(even) .project-card-img:hover{
+    transform: none;
 }
 
 .social-links {
@@ -406,6 +427,7 @@ footer {
     animation: slide-right 1s ease;
 }
 
+
 @keyframes slide-left {
     0%{
         opacity: 0;
@@ -427,6 +449,12 @@ footer {
         transform: none;
     }
 }
+
+/* @keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+} */
 
 @media (max-width: 1200px){
     .hero h1{
@@ -506,7 +534,7 @@ footer {
 @media (max-width: 500px){
     body, html {
         position: relative;
-        overflow-x: hidden;
+        overflow-x: none;
     }
 
     header {
