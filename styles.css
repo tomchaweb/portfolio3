@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+:root {
+    --background-color: #1b1c1e;
+    --text-color: #f7f7f7;
+    --accent-color: #F98866;
+
+    /* --background-color: #EBE9E1;
+    --text-color: #E43d12;
+    --accent-color: #1b1c1d; */
+
+    /* --background-color: #3AAFA9;
+    --text-color: #17252A;
+    --accent-color: #FEFFFF; */
+}
+
 body {
     width: 100%;
     font-size: 10px;
@@ -14,13 +28,13 @@ body {
 }
 
 .dark {
-    background-color: #1b1c1e;
-    color: #f7f7f7;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .light {
-    background-color: #ffffff;
-    color: #1b1c1e;
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .dark-light-mode-btn {
@@ -33,7 +47,7 @@ body {
     border: none;
     background-color: inherit;
     /* color: inherit; */
-    color: #F98866;
+    color: var(--accent-color);
     transition: all 0.2s;
     /* -webkit-animation: rotate 9s linear infinite;
     animation: rotate 9s linear infinite; */
@@ -60,7 +74,7 @@ header {
 header h2 {
     font-size: 4em;
     letter-spacing: -0.1em;
-    color: #F98866;
+    color: var(--accent-color);
 }
 
 header nav {
@@ -82,14 +96,14 @@ nav a{
 
 nav a:hover{
     cursor: pointer;
-    color: #a7a7a7
+    color: #a7a7a7;
 }
 
 .nav-dot {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #F98866;
+    background-color: var(--accent-color);
 }
 
 .hero {
@@ -118,7 +132,7 @@ nav a:hover{
 }
 
 .hero h1 span {
-    color: #F98866;
+    color: var(--accent-color);
 }
 
 .hero h2{
@@ -130,7 +144,7 @@ nav a:hover{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     /* color: #FDD142; */
-    color: #F98866;
+    color: var(--accent-color)
 }
 
 section {
@@ -156,7 +170,7 @@ section {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #F98866;
+    background-color: var(--accent-color);
 }
 
 .section-header h2 {
@@ -248,8 +262,8 @@ section {
 .project-card button {
     /* background-color: rgb(255, 204, 0); */
     /* background: linear-gradient(to left, #ff4066, #fff16a); */
-    background-color: #F98866;
-    color: #1b1c1e;
+    background-color: var(--accent-color);
+    color: var(--background-color);
     width: 10rem;
     padding: 0.5rem;
     border: none;
@@ -265,7 +279,7 @@ section {
 
 .project-card button:hover{
     cursor: pointer;
-    background-color: #1b1c1e;
+    background-color: var(--background-color);
     /* box-shadow: none; */
     color: #ee6941;
     /* box-shadow: 0px 2px 5px #111215; */
@@ -341,7 +355,7 @@ section {
 }
 
 .social-icon {
-    color: #F98866;
+    color: var(--accent-color);
 }
 
 .social-links li{
@@ -357,7 +371,7 @@ footer {
 }
 
 .burger-icon {
-    color: #F98866;
+    color: var(--accent-color);
     display: none;
     pointer-events: none;
 }
@@ -375,7 +389,7 @@ footer {
     z-index: 1000;
     width: 100%;
     height: 100%;
-    background-color: #F98866;
+    background-color: var(--accent-color);
     pointer-events: all;
     display: flex;
     flex-direction: column;
@@ -386,7 +400,7 @@ footer {
 
 .burger-menu a{
     text-decoration: none;
-    color: #1b1c1e;
+    color: var(--background-color);
     text-transform: uppercase;
     font-size: 6em;
     letter-spacing: 0.4em;
@@ -400,7 +414,7 @@ footer {
 }
 
 .close-burger-menu-button{
-    color: #1b1c1e;
+    color: var(--background-color);
     transition: all 0.2s;
 }
 
@@ -416,7 +430,7 @@ footer {
 }
 
 .no-scroll {
-    overflow-y: clip;
+    overflow-y: hidden;
 }
 
 .slide-left-anim {
@@ -568,6 +582,18 @@ footer {
 
     .social-links li{
         font-size: 1.5em;
+    }
+
+    .project-card-img {
+        transform: none;
+    }
+
+    .project-card-img:hover {
+        scale: 1;
+    }
+
+    .project-card:nth-child(even) .project-card-img{
+        transform: none;
     }
 
     .burger-menu .nav-link {
